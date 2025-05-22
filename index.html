@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/img/Pokeball.svg"
+    />
+    <link rel="stylesheet" href="./src/assets/styles/index.css" />
+    <link rel="stylesheet" href="./src/components/styles/pokemon-card.css" />
+    <link rel="stylesheet" href="./src/components/styles/navbar.css" />
+    <link rel="stylesheet" href="./src/components/styles/loading.css" />
+  </head>
+  <body class="fade-in">
+    <div class="back-drop">
+      <header class="header">
+        <div class="navbar">
+          <img
+            src="./src/assets/img/poke-img.png"
+            alt="Logo"
+            class="logo-img"
+          />
+          <nav class="btn-container back-next">
+            <button class="back-next-btn" id="back-page">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <h3 class="div-center current-page-h3">Page 1</h3>
+            <button class="back-next-btn" id="next-page">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </nav>
+        </div>
+        <div class="div-center input-search-div">
+          <input
+            type="search"
+            name=""
+            id="input-search"
+            class="input-search"
+            placeholder="Search a pokemon..."
+          />
+          <button class="btn" id="search-btn">Search</button>
+        </div>
+      </header>
+      <main>
+        <div class="cards-container"></div>
+      </main>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+<!--  -->
